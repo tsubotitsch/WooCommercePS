@@ -1,6 +1,6 @@
 # WooCommercePS
 
-<center><img src="https://github.com/tsubotitsch/WooCommercePS/blob/main/WooCommercePS_small.png" width="50">WooCommercePS Logo</img></center>
+<center><img src="https://github.com/tsubotitsch/WooCommercePS/blob/main/WooCommercePS_small.png" width="150">WooCommercePS Logo</img></center>
 
 [![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/WooCommercePS?label=PSGallery%20Version)](https://www.powershellgallery.com/packages/WooCommercePS)
 [![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/WooCommercePS?label=Downloads)](https://www.powershellgallery.com/packages/WooCommercePS)
