@@ -2,23 +2,71 @@ TOPIC
     about_WooCommercePS
 
 SHORT DESCRIPTION
-    PowerShell module for managing the WooCommerce shop system
+    Manage WooCommerce stores directly from PowerShell
 
 LONG DESCRIPTION
-    PowerShell module for managing the WooCommerce shop system
+    WooCommercePS is a cross-platform PowerShell module designed to simplify
+    the management of WooCommerce-based online stores through the WooCommerce REST API.
+
+    The module enables administrators and developers to automate common tasks
+    such as managing products, orders, customers, and more—directly from PowerShell.
+
+    It works on Windows, Linux, and macOS, making it suitable for modern DevOps
+    and automation workflows.
+
+    Before using this module, you need to generate API credentials from your
+    WooCommerce store:
+
+        1. Log in to your WooCommerce admin dashboard.
+        2. Navigate to: WooCommerce > Settings > Advanced > REST API.
+        3. Click "Add Key".
+        4. Provide a description, select a user, and set permissions to "Read/Write".
+        5. Generate the API key and note the Consumer Key and Consumer Secret.
+
+    Use these credentials to connect via PowerShell.
 
 EXAMPLES
-    PS C:\> {{ add examples here }}
+    Example 1: Connect to a WooCommerce store
 
-NOTE:
-    Thank you to all those who contributed to this module, by writing code, sharing opinions, and provided feedback.
+        PS> Connect-WooCommerce `
+                    -ConsumerKey "your_consumer_key" `
+                    -ConsumerSecret "your_consumer_secret" `
+                    -StoreUrl "https://yourstore.com"
 
-TROUBLESHOOTING NOTE:
-    Look out on the Github repository for issues and new releases.
+    Example 2: Retrieves all orders with default filters (status=any, sorted by date ascending).
+
+        PS> Get-WooCommerceOrder
+
+    Example 3: List products in stock
+
+        PS> Get-WooCommerceProduct -stockstatus instock
+
+NOTES
+    Author:  Thomas Subotitsch
+    Project: WooCommercePS
+
+    Contributions, feedback, and issue reports are highly appreciated.
+
+TROUBLESHOOTING NOTE
+    If you encounter issues, please check the GitHub repository for:
+        - Known issues
+        - Updates and releases
+        - Documentation and discussions
+
+    Ensure that:
+        - Your API credentials are correct
+        - Your store URL is reachable
+        - REST API access is enabled in WooCommerce
 
 SEE ALSO
-    - {{ Please add Project URI such as github }}}
+    WooCommerce REST API documentation:
+    https://woocommerce.github.io/woocommerce-rest-api-docs/#
+
+    PowerShell Gallery package:
+    https://www.powershellgallery.com/packages/WooCommercePS
+
+    GitHub repository:
+    https://github.com/tsubotitsch/WooCommercePS
 
 KEYWORDS
-    {{ Add comma separated keywords here }}
-
+    WooCommerce, PowerShell, REST API, eCommerce, Automation, DevOps

@@ -50,19 +50,19 @@
   "liveshare.allowGuestDebugControl": true,
   "workbench.iconTheme": "vscode-icons",
   "terminal.integrated.profiles.linux": {
-    "SendDrop pwsh": {
+    "WooCommercePS pwsh": {
       "path": "pwsh",
       "args": ["-NoExit", "-Command", "& './.vscode/profile.ps1'"]
     }
   },
-  "terminal.integrated.defaultProfile.linux": "SendDrop pwsh",
+  "terminal.integrated.defaultProfile.linux": "WooCommercePS pwsh",
   "terminal.integrated.profiles.windows": {
-    "SendDrop pwsh": {
+    "WooCommercePS pwsh": {
       "source": "PowerShell",
       "args": ["-NoExit", "-Command", "& './.vscode/profile.ps1'"]
     }
   },
-  "terminal.integrated.defaultProfile.windows": "SendDrop pwsh",
+  "terminal.integrated.defaultProfile.windows": "WooCommercePS pwsh",
   "chat.tools.terminal.autoApprove": {
     "mkdir": true,
     "New-Item": true,

@@ -24,7 +24,7 @@ GUID = 'd184e10e-a902-48ea-a5c7-62ac22f78bdd'
 Author = 'Thomas Subotitsch'
 
 # Company or vendor of this module
-CompanyName = 'Thomas Subotitsch'
+CompanyName = ''
 
 # Copyright statement for this module
 Copyright = '(c) Thomas Subotitsch. All rights reserved.'
@@ -33,7 +33,7 @@ Copyright = '(c) Thomas Subotitsch. All rights reserved.'
 Description = 'PowerShell module for managing the WooCommerce shop system'
 
 # Minimum version of the PowerShell engine required by this module
-PowerShellVersion = '5.0'
+PowerShellVersion = '7.2'
 
 # Name of the PowerShell host required by this module
 # PowerShellHostName = ''
@@ -129,15 +129,3 @@ PrivateData = @{
 # DefaultCommandPrefix = ''
 
 }
-
-
-
-
-
-
-
-
-
-
-
-

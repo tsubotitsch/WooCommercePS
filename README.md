@@ -29,5 +29,28 @@ First, you'll need an API key from your WooCommerce account:
 
 Example:
    ```powershell
-   Connect-WooCommerce -ConsumerKey "your_consumer_key" -ConsumerSecret "your_consumer_secret" -StoreUrl "https://yourstore.com"
+   $ConnectParams = @{
+       ConsumerKey    = "your_consumer_key"
+       ConsumerSecret = "your_consumer_secret"
+       StoreUrl       = "https://yourstore.com"
+   }
+   Connect-WooCommerce @ConnectParams
+   ```
+
+### Example Usage
+
+   ```powershell
+
+  # Get a product by ID
+  Get-WooCommerceProduct -Id 123
+
+  # Create a new simple product with a regular price of 19.99.
+   $NewProductParams = @{
+         Name        = "New Product"
+         Type        = "simple"
+         RegularPrice = "19.99"
+         Description = "A new product description."
+   }
+   New-WooCommerceProduct @NewProductParams
+
    ```
